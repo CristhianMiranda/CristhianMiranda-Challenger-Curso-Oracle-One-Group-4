@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <title>Decodificador Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/Vector-1.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>   
+    <header>
+        <h1 id="logo"><img src="assets/images/Vector-1.svg" alt="logo Alura."></h1>
+    </header>
+    <div class="conteiner">
+        <section>
+            <div class="textCamp">
+                <textarea id="textArea" placeholder="Digite su texto"></textarea>
+            </div>
+            <div class="notice">
+                <img src="assets/images/Vector.svg" alt="punto de afirmación." id="exclamationMark">
+                <p>Solo letras minúsculas y sin acento.</p>
+            </div>
+            <div id="buttonArea">
+                <button type="button" class="inputButton" id="crypt"><span>Cifrar</span></button>
+                <button type="button" class="inputButton" id="decrypt"><span>Descifrar</span></button>
+            </div>
+        </section>
+        <section>
+            <div class="resultCamp"><!--colocar en la class después resultCampAfter-->
+                <div>
+                    <img id="sticker" src="assets/images/High-quality-products-1-1.svg" alt="Una persona sosteniendo una lupa de aumento y un diamante justo enfrente de ella.">
+                </div>
+                <div class="textCard">
+                    <div id="before">
+                        <p class="title">Ningún mensaje encontrado</p>
+                        <p class="text">Escriba un texto que desee cifrar o descifrar.</p>
+                    </div>
+                    <div id="after">
+                        <textarea class="textAfter" id="textAreaTwo" readonly></textarea>
+                        <button type="button" class="inputButton" id="copy"><span>Copiar</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
